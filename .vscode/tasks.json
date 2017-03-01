@@ -1,7 +1,34 @@
 {
     "version": "0.1.0",
-    "command": "${cwd}misc\\build.bat",
-    "isShellCommand": false,
-    "args": [],
-    "showOutput": "always"
+    "tasks": [
+        {
+            "taskName": "build",
+            "command": "${cwd}misc\\build.bat",
+            "isShellCommand": false,
+            "args": [],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "build & run",
+            "command": "${cwd}misc\\build_run.bat",
+            "isShellCommand": false,
+            "args": [],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "run",
+            "command": "${cwd}bin\\win32_main.exe",
+            "isShellCommand": false,
+            "args": [],
+            "showOutput": "always"
+        },
+        {
+            "taskName": "debug in visual studio",
+            "command": "${cwd}misc\\debug.bat",
+            "args": [
+                "${cwd}bin\\win32_main.exe"
+            ],
+            "isShellCommand": true
+        }
+    ]
 }

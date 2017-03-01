@@ -5,6 +5,12 @@ popd
 if NOT EXIST bin (
 mkdir bin
 )
-cd bin
-cl p:/src/win32_main.cpp /link User32.lib
-call win32_main.exe
+pushd bin
+echo ********************************************************************
+echo *                      Started building                            *
+echo ********************************************************************
+cl /Zi p:/src/win32_main.cpp /link User32.lib
+echo ********************************************************************
+echo *                      Finished building                           *
+echo ********************************************************************
+popd
