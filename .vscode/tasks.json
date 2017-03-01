@@ -1,0 +1,7 @@
+{
+    "version": "0.1.0",
+    "command": "${cwd}misc\\build.bat",
+    "isShellCommand": false,
+    "args": [],
+    "showOutput": "always"
+}
