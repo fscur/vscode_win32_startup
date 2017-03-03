@@ -2,13 +2,16 @@
 
 Visual Studio Code startup C/C++ project. It uses a build system based on [Handmade Hero](https://handmadehero.org) by Casey Muratori. 
 
+
 Configurations:
 - Edit the tasks in the tasks.json;
 - Set ctrl+shift+b to map "workbench.action.tasks.runTask" in your keybindings.json;
 - Be happy!
 
+
 Required:
 - Visual Studio 2015 Community (for compiling)
+
 
 Recommended extensions:
 - C/C++ (ms-vscode.cpptools)
