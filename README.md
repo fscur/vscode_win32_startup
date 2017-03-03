@@ -10,7 +10,7 @@ Configurations:
 Required:
 - Visual Studio 2015 Community (for compiling)
 
-Recomended extensions:
+Recommended extensions:
 - C/C++ (ms-vscode.cpptools)
 - C/C++ Clang (mitaki28.vscode-clang)
 - C/C++ Snippets (hars.CppSnippets)
