@@ -1,6 +1,6 @@
 # vscode_win32_startup
 
-Visual Studio Code startup C/C++ project. It uses a build system based on [Handmade Hero](https://www.handmadehero.org) by Casey Muratori. 
+Visual Studio Code startup C/C++ project. It uses a build system based on [Handmade Hero](https://handmadehero.org) by Casey Muratori. 
 
 Configurations:
 - Edit the tasks in the tasks.json;
