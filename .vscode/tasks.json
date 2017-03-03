@@ -3,32 +3,39 @@
     "tasks": [
         {
             "taskName": "build",
-            "command": "${cwd}misc\\build.bat",
-            "isShellCommand": false,
-            "args": [],
+            "command": "call",
+            "isShellCommand": true,
+            "args": [
+                "\"${cwd}\"\\misc\\build.bat \"${cwd}\" main"
+            ],
             "showOutput": "always"
         },
         {
-            "taskName": "build & run",
-            "command": "${cwd}misc\\build_run.bat",
-            "isShellCommand": false,
-            "args": [],
+            "taskName": "build_run",
+            "command": "call",
+            "isShellCommand": true,
+            "args": [
+                "\"${cwd}\"\\misc\\build_run.bat \"${cwd}\" main main.exe"
+            ],
             "showOutput": "always"
         },
         {
             "taskName": "run",
-            "command": "${cwd}bin\\win32_main.exe",
-            "isShellCommand": false,
-            "args": [],
+            "command": "call",
+            "isShellCommand": true,
+            "args": [
+                "\"${cwd}\"\\bin\\main.exe"
+            ],
             "showOutput": "always"
         },
         {
             "taskName": "debug in visual studio",
-            "command": "${cwd}misc\\debug.bat",
+            "command": "call",
+            "isShellCommand": true,
             "args": [
-                "${cwd}bin\\win32_main.exe"
+                "\"${cwd}\"\\misc\\debug.bat \"${cwd}\" main main.exe"
             ],
-            "isShellCommand": true
+            "showOutput": "always"
         }
     ]
 }

@@ -1,9 +1,9 @@
-#include "windows.h"
+#include <windows.h>
 
 int CALLBACK WinMain(
     HINSTANCE instance,
     HINSTANCE prevInstance,
-    LPSTR*    cmdLine,
+    LPSTR     cmdLine,
     int       cmdShow)
 {
     MessageBox(

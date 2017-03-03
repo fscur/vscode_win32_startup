@@ -1,5 +1,5 @@
 @echo off
-call misc/build.bat
+call misc/build.bat %1 %2
 pushd bin
-devenv win32_main.exe
+devenv %3
 popd
