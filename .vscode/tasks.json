@@ -6,7 +6,11 @@
             "command": "call",
             "isShellCommand": true,
             "args": [
-                "\"${cwd}\"\\misc\\build.bat \"${cwd}\" main"
+                "\"${cwd}\"\\misc\\build.bat",
+                "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat\"",
+                "x64",
+                "\"${cwd}\"",
+                "program"
             ],
             "showOutput": "always"
         },
@@ -15,7 +19,12 @@
             "command": "call",
             "isShellCommand": true,
             "args": [
-                "\"${cwd}\"\\misc\\build_run.bat \"${cwd}\" main main.exe"
+                "\"${cwd}\"\\misc\\build_run.bat",
+                "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat\"",
+                "x64",
+                "\"${cwd}\"",
+                "program",
+                "program.exe"
             ],
             "showOutput": "always"
         },
@@ -24,7 +33,7 @@
             "command": "call",
             "isShellCommand": true,
             "args": [
-                "\"${cwd}\"\\bin\\main.exe"
+                "\"${cwd}\"\\bin\\program.exe"
             ],
             "showOutput": "always"
         },
@@ -33,7 +42,12 @@
             "command": "call",
             "isShellCommand": true,
             "args": [
-                "\"${cwd}\"\\misc\\debug.bat \"${cwd}\" main main.exe"
+                "\"${cwd}\"\\misc\\debug.bat",
+                "\"C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\VC\\vcvarsall.bat\"",
+                "x64",
+                "\"${cwd}\"",
+                "program",
+                "program.exe"
             ],
             "showOutput": "always"
         }

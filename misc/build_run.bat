@@ -1,5 +1,5 @@
 @echo off
-call misc/build.bat %1 %2
+call misc/build.bat %1 %2 %3 %4
 pushd bin
-call %3
+call %5
 popd

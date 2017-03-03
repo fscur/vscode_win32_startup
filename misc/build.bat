@@ -1,10 +1,8 @@
 @echo off
-pushd misc
-call shell.bat
-popd
+call %1 %2
 
 if EXIST P: subst P: /D
-subst P: %1
+subst P: %3
 
 if NOT EXIST bin mkdir bin
 
@@ -13,7 +11,7 @@ echo ********************************************************************
 echo *                      Started building                            *
 echo ********************************************************************
 
-cl /Zi /Fe%2 P:/src/win32_main.cpp /link User32.lib Gdi32.lib
+cl /Zi /Fe%4 P:/src/win32_main.cpp /link User32.lib Gdi32.lib
 
 echo ********************************************************************
 echo *                      Finished building                           *
